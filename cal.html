@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="cal.css">
+<div class="container">
+   <input type="text" id="display" disabled>
+
+   <div class="numbers">
+
+    <div class="toprow">
+         <button onclick="clear()">CL</button>
+         <button onclick="appendToDisplay('9')"> 9</button>
+         <button onclick = "appendToDisplay('8')">8</button>
+         <button  onclick = "appendToDisplay('7')">7</button>
+      </div>
+   <div class="middlerow">
+      <button onclick = "appendToDisplay('6')">6</button>
+      <button onclick = "appendToDisplay('5')">5</button>
+      <button onclick = "appendToDisplay('4')">4</button>
+      <button onclick = "appendToDisplay('3')">3</button>
+  </div>
+    <div class="bottomrow"></div>
+    <button onclick = "appendToDisplay('2')">2</button>
+    <button onclick = "appendToDisplay('1')">1</button>
+    <button onclick = "appendToDisplay('0')">0</button>
+    <button onclick = "appendToDisplay('+')">+</button>
+    </div>
+   <div>
+      <button onclick="calculate()" id="equals">=</button>
+   <button onclick="appendToDisplay('*')">*</button>
+   <button onclick="appendToDisplay('/')">/</button>
+   </div>
+          
+      </div>
+</div>
+
+
+
+    <script src="cal.js"></script>
+
+<body>
+    
+</body>
+</html>
